@@ -1,0 +1,264 @@
+/* default styles/colors & fonts */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* text & background color */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #222021;
+    color: black; 
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* page centering */
+.container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+/* header */
+.header {
+    text-align: center;
+    background-color: grey;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    width: calc(70%); 
+    margin-left: auto; 
+    margin-right: auto; 
+    text-align: center; 
+}
+
+.header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.profile-image {
+    border-radius: 50%;
+    max-width: 200px;
+    height: auto;
+    margin: 10px auto;
+    display: block;
+}
+
+/* header title color */
+.header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: beige; 
+}*
+
+/* profile Picture circle frame (not oval!!!!) */
+.profile-image {
+    border-radius: 50%;
+    width: 200px; 
+    height: 200px; 
+    margin: 10px auto;
+    display: block;
+}
+
+
+/* About Me */
+.about-me {
+    background-color: beige; 
+    color: #222021;
+    border: 2px solid #222021;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    width: calc(70% - 40px); 
+    margin-left: auto; 
+    margin-right: auto; 
+    text-align: center; 
+}
+
+.about-me h2 {
+    margin-bottom: 10px;
+    color: #222021; 
+}
+
+
+/* button styles */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #222021; 
+    color: beige; 
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: beige;
+    color: #222021;
+}
+
+/* box styles */
+.box {
+    background-color: beige; 
+    color: #222021; 
+    border: 2px solid #222021; 
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    width: calc(70% - 40px); 
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+/* section-specific styles */
+.skills-languages {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills {
+    width: 30%; 
+}
+
+.skills h3 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #222021; 
+}
+
+.button-list {
+    list-style: none;
+    padding: 0;
+}
+
+.button-list li {
+    margin-bottom: 10px;
+}
+
+/* FAQ section styles */
+faq summary {
+    font-weight: bold;
+    cursor: pointer;
+    color: #222021; 
+}
+
+/* fancy box styles for FAQ questions */
+.faq details {
+    background-color: beige; 
+    border: 2px solid #222021; 
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* hobbies & interests styles */
+.hobbies-interests {
+    background-color: beige; 
+    color: #222021; 
+    border: 2px solid #222021; 
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    width: calc(70% - 40px); 
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+.hobbies-interests h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #222021; 
+}
+
+/* Hobby Buttons */
+.hobby-buttons {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    padding: 0;
+}
+
+.hobby-buttons li {
+    background-color: #222021;
+    color: beige; 
+    padding: 10px 20px;
+    border: 2px solid beige; 
+    border-radius: 5px;
+    margin: 5px; 
+    cursor: pointer;
+}
+
+/* Remove default list styling */
+.hobby-buttons li::marker {
+    content: none;
+}
+
+
+
+/* footer styles (why is it not aligning properly???) */
+.footer {
+    text-align: left; 
+    background-color: #222021; 
+    color: beige; 
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start;
+}
+
+.footer h3 {
+    margin-bottom: 20px;
+}
+
+.footer-links .footer-link {
+    color: beige; 
+    text-decoration: none;
+    margin: 5px 0;
+}
+
+/* newsletter styles */
+.newsletter {
+    text-align: left; 
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    margin-top: 20px;
+}
+
+/* Adjust the margin-left to move the button to the right (why is it not working?)*/
+.subscribe-button {
+    margin-left: auto;
+}
+
+
+
+.newsletter p {
+    margin-top: 10px;
+}
+
+.newsletter-input {
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+/* Newsletter button retains the navy color */
+.subscribe-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #222021; 
+    color: beige; 
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.subscribe-button:hover {
+    background-color: #444;
+}
